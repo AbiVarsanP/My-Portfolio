@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="education.html" style="--i:2">Education</a>
+            <a href="projects.html" style="--i:3">Projects</a>
+            <a href="certificates.html" style="--i:4">Certificates</a>
+            <a href="skills.html" style="--i:5">Skills</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h3>Hola! It's</h3>
+            <h1>Abi Varsan P</h1>
+            <h3>& I'm a <span class="multiple-text"></span></h3>
+            <p>AI&DS Student with focus on exploring new technology ideas. Eager to learn more about coding and technology, create more projects. Skilled in Coding, Web development, creative UI designs, graphics design.</p>
+            <div class="social-media">
+                <a href="http://linkedin.com/in/abivarsanp" style="--i:7;"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/AbiVarsanP" style="--i:8;"><i class="bx bxl-github"></i></a>
+                <a href="https://www.behance.net/abivarsan" style="--i:9;"><i class="bx bxl-behance"></i></a>
+                <a href="https://www.instagram.com/hashtag_abi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="--i:10;"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <a href="ABI VARSAN P resume.pdf" download class = "download-btn" >Download CV</a>
+            <div class="div"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="abi.jpg" alt="abi img" style="width: 400px;">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Add this code to your script.js
+
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+
+    </script>
+</body>
+</html>

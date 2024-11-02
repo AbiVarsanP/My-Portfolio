@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Hash Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html" style="--i:1">Home</a>
+            <a href="education.html" style="--i:2">Education</a>
+            <a href="projects.html" style="--i:3">Projects</a>
+            <a href="certificates.html" style="--i:4">Certificates</a>
+            <a href="skills.html" style="--i:5" class="active">Skills</a>
+        </nav>
+    </header>
+
+    <section class="contents">
+        <h1>Skills</h1>
+
+        <div class="skills-section">
+            <div class="skill-category">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages</strong> - Python, C, Java</li>
+                    <li><strong>Web Technology</strong> - HTML, CSS, JS, Python(Flask), Git, SQL</li>
+                    <li><strong>Software Application</strong> - Adobe Photoshop, Adobe Premier Pro, Figma, Blender</li>
+                    <li><strong>Editing Tools</strong> - Capcut, Alightmotion, Pics Art</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem-solving</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Tamil(fluent)</li>
+                    <li>English</li>
+                    <li>Spanish(A1.1)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skills-section">
+            <div class="skill-category">
+                <h2>Experience</h2>
+                <p>Internship at TechMedZ startup Company - Graphics Designer</p>
+                <p>Coordinator for College Freshers Day - Managed the event and organized Hackathon.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    </script>
+</body>
+</html>

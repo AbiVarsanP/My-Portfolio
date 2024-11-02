@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Hash Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" style="--i:1">Home</a>
+            <a href="education.html" style="--i:2">Education</a>
+            <a href="projects.html" style="--i:3" class="active">Projects</a>
+            <a href="certificates.html" style="--i:4">Certificates</a>
+            <a href="skills.html" style="--i:5">Skills</a>
+        </nav>
+    </header>
+
+    <section class="contentp">
+        <h1 class="fadeInQuick">Projects</h1>
+        <div class="projects-container">
+            <!-- Repeat this project-card for each project -->
+            <div class="project-card fadeInQuick" style="--delay: 0s">
+                <h2>College Management System</h2>
+                <p class="timeline">Jun 2024 - Present</p>
+                <p class="description">Developing a College Management System using JAVA for my 3rd Semester project.</p>
+                <!--<a href="https://link-to-project1.com" target="_blank" class="project-link">View Project</a>-->
+            </div>
+            
+            <div class="project-card fadeInQuick" style="--delay: 0.2s">
+                <h2>Hackathon Web</h2>
+                <p class="timeline">Sep 2024</p>
+                <p class="description">Developed and conducted a hackathon web project using HTML, CSS, JavaScript, and Python (Flask) to create an interactive platform with tasks and challenges for Freshers’ Day.</p>
+                <a href="https://hashabi.pythonanywhere.com/home" target="_blank" class="project-link">View Project</a>
+            </div>
+            
+            <div class="project-card fadeInQuick" style="--delay: 0.4s">
+                <h2>Marvel OTT Frontend Design</h2>
+                <p class="timeline">Jan 2024</p>
+                <p class="description">Designed a Marvel-themed OTT platform frontend using HTML, CSS, and JavaScript to enhance skills in responsive UI/UX and interactive web design.</p>
+                <a href="https://abivarsanp.github.io/hash-marvel/marvel.html" target="_blank" class="project-link">View Project</a>
+            </div>
+            
+            <div class="project-card fadeInQuick" style="--delay: 0.6s">
+                <h2>Online Cart</h2>
+                <p class="timeline">Sep 2023 - Jun 2024</p>
+                <p class="description">Built an Online Shopping Cart using Python for Simplilearn's course project, featuring product selection, cart management, and checkout functionality.</p>
+            </div>
+            
+            <div class="project-card fadeInQuick" style="--delay: 0.8s">
+                <h2>School Management System</h2>
+                <p class="timeline">Sep 2023 - Jun 2024</p>
+                <p class="description">Built a School Management System using C and data structures, implementing arrays for efficient student and staff data management for my 2nd semester data structure project</p>
+            </div>
+            
+            <div class="project-card fadeInQuick" style="--delay: 1s">
+                <h2>Hand Cricket</h2>
+                <p class="timeline">Jun 2023</p>
+                <p class="description">Developed a hand cricket game using Python as part of my academy coursework, applying fundamental programming concepts and enhancing problem-solving skills.</p>
+                <a href="https://github.com/AbiVarsanP/CracyCrik" target="_blank" class="project-link">View Project</a>
+            </div>
+
+            <!-- Add more projects in the same format, changing the delay for each card -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    </script>
+</body>
+</html>

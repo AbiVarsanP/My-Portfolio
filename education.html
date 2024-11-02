@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Hash Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="bx bx-menu"></i>
+        </div>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" style="--i:1">Home</a>
+            <a href="education.html" style="--i:2" class="active">Education</a>
+            <a href="projects.html" style="--i:3">Projects</a>
+            <a href="certificates.html" style="--i:4">Certificates</a>
+            <a href="skills.html" style="--i:5">Skills</a>
+        </nav>
+    </header>
+
+    <section class="content" style="margin-top: 50px;">
+        <h1 class="fadeInQuick">Education</h1> <!-- Title animation -->
+    
+        <div class="edu-container slideBottomQuick"> <!-- Education box animation -->
+            <div class="edu-section">
+                <!-- Each education item with quicker animations -->
+                <button class="edu-item slideRightQuick" style="animation-delay: 0.5s;" data-details="Bachelor of Technology in Artificial Intelligence and Data Science.">
+                    B.Tech - AI&DS (2023 - Present)
+                </button>
+                <div class="edu-details slideLeftQuick" style="animation-delay: 0.1s;">
+                    <div><strong>K Ramakrishnan College of Technology</strong></div>
+                    <div>B.Tech in Artificial Intelligence and Data Science - 2nd Year</div>
+                    <div>1st year - CGPA (8.5)</div>
+                </div>
+    
+                <button class="edu-item slideRightQuick" style="animation-delay: 1s;" data-details="Higher Secondary Certificate, completed with distinction.">
+                    HSC (2022 - 2023)
+                </button>
+                <div class="edu-details slideLeftQuick" style="animation-delay: 0.1s;">
+                    <div><strong>C.S.Matriculation Higher Secondary School</strong></div>
+                    <div>Higher Secondary Certificate, completed with distinction (83.1%)</div>
+                </div>
+    
+                <button class="edu-item slideRightQuick" style="animation-delay: 1.5s;" data-details="Secondary School Leaving Certificate, with excellent grades.">
+                    SSLC (2020 - 2021)
+                </button>
+                <div class="edu-details slideLeftQuick" style="animation-delay: 0.1s;">
+                    <div><strong>C.S.Matriculation Higher Secondary School</strong></div>
+                    <div>Secondary School Leaving Certificate, with excellent grades.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+    <script>
+        // Education details toggle logic
+        const eduItems = document.querySelectorAll('.edu-item');
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbar = document.getElementById('navbar');
+
+        eduItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const detailsDiv = item.nextElementSibling;
+                
+                // Toggle visibility of the details div
+                detailsDiv.style.display = (detailsDiv.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active'); // Toggle the active class
+        });
+    </script>
+</body>
+</html>
