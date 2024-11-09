@@ -108,9 +108,11 @@ body{
     animation-delay: 1s;
 }
 
-.home-img img{
-    border-radius: 50%;
+.home-img img {
+    border-radius: 50%; /* Makes the image circular */
     max-width: 450px;
+    width: 450px; /* Ensures a consistent width */
+    height: 450px; /* Ensures a consistent height */
     margin-right: -20px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
